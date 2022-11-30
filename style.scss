@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$veryPaleBlue: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+
+html {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background-color: $paleBlue;
+}
+
+.component {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+
+  overflow: hidden;
+  display :flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 1px $darkBlue;
+  max-width: 50%;
+
+  &__content {
+    padding: 0 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__annual {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $veryPaleBlue;
+    border-radius: 10px;
+    padding: 0 1rem;
+  }
+
+  &__box {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__icon {
+    align-self: center;
+  }
+
+  &__title {
+    font-weight: 800;
+  }
+
+  &__subtitle {
+    color: $desaturatedBlue;
+  }
+
+  &__link {
+    font-weight: 800;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &_link {
+      text-decoration: none;
+    }    
+
+    &_blue {
+      background-color: $brightBlue;
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      border-radius: 0.625rem;
+      padding: 1rem;
+      font-family: 'Red Hat Display', sans-serif;
+      box-shadow: 0 10px 20px $desaturatedBlue;
+    }
+
+    &_transparent {
+      background-color: transparent;
+      font-weight: 700;
+      border: none;
+      font-family: 'Red Hat Display', sans-serif;
+      color: $desaturatedBlue;
+    }
+  }
+
+
+}
